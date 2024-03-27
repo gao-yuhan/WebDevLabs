@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Yuhan (Doris) Gao">
+    <meta name="description" content="Doris Professional Website">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <title>Yuhan (Doris) Gao</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script defer src="../static/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body onload="addYear()">
+    <header>
+        <h1 id="webname">Yuhan (Doris) Gao</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html">Contact Me</a>
+            <a href="fun.html">For Fun</a>
+        </nav>
+    </header>
+    <div class="main">
+        <h2>Contact Me</h2>
+        <form action="">
+            <label for="UserName">Your name (required): </label>
+            <input type="text" name="UserName" id="UserName" required>
+            <label for="UserEmail">Your email (required): </label>
+            <input type="email" name="UserEmail" id="UserEmail" required>
+            <label for="UserText">Your text (required): </label>
+            <textarea name="UserText" id="UserText" cols="30" rows="10" required></textarea>
+            <input type="submit" value="Send" onclick="validate()">
+        </form>
+        <p id="ValidateMsg"></p>
+
+        <table>
+            <tr><th>Contact Method</th><th>Description</th></tr>
+            <tr><td>Email</td><td>yuhang2@andrew.cmu.edu</td></tr>
+            <tr><td>Phone</td><td>+1 412-956-7073</td></tr>
+            <tr><td>LinkedIn</td><td>https://www.linkedin.com/in/yuhan-doris-gao/</td></tr>
+        </table>  
+    </div>
+    <footer>
+        <p id ="copyYear">Doris &copy</p>
+    </footer> 
+
+</body>
+</html>
